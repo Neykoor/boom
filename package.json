@@ -1,0 +1,36 @@
+{
+	"name": "@neykoor/boom",
+	"version": "1.0.0",
+	"description": "Minimal HTTP-friendly error class, API-compatible subset of @hapi/boom used by BaileysX",
+	"type": "module",
+	"main": "dist/index.js",
+	"types": "dist/index.d.ts",
+	"files": [
+		"dist",
+		"LICENSE"
+	],
+	"engines": {
+		"node": ">=18"
+	},
+	"scripts": {
+		"build": "tsc -p tsconfig.json",
+		"prepublishOnly": "npm run build"
+	},
+	"keywords": [
+		"boom",
+		"error",
+		"http",
+		"baileys",
+		"baileysx"
+	],
+	"author": "Julio (Neykoor)",
+	"license": "MIT",
+	"publishConfig": {
+		"access": "public"
+	},
+	"dependencies": {},
+	"devDependencies": {
+		"typescript": "^5.6.0",
+		"@types/node": "^22.0.0"
+	}
+}
